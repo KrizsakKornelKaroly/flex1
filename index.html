@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex1</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            border: 5px solid black;
+            justify-content: space-between;
+            width: 100%;
+            height: 900px;
+        }
+        main{
+            border: 5px solid black;
+            height: 900px;
+            width: 78.5%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .item3{
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 5px;
+            margin: 10px;
+            text-align: center;
+            width: 30%;
+            font-size: large;
+            font-weight: bold;
+        }
+        .item3:hover{
+            background-color: lightblue;
+        }
+        nav{
+            width: 20%;
+            height: 900px;
+            border: 5px solid black;
+            
+        }
+        .meret{
+            width: 100%;
+            height: 300px;
+        }
+        body{
+            width: 95%;
+        }
+        header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction: row;
+            width: 100%; 
+            height: 80px; 
+            border: 5px solid black;
+        }
+        .item{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        img{
+            height: 50px;
+        }
+        footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%; 
+            height: 80px; 
+            border: 5px solid black;
+        }
+        .item2{
+            padding: 10px;
+            margin: 10px;
+        }
+        input[type="button"]{
+            padding: 10px;
+        }
+        @media screen and (max-width: 400px){
+            header{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: start;
+                height: 250px;
+            }
+            .item{
+                margin: 10px;
+                text-align: center;
+            }
+            footer{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: start;
+                height: 250px;
+            };
+            .item2{
+                margin: 10px;
+            }
+            nav{
+                width: 100%;
+                height: 250px;
+            }
+            main{
+                width: 100%;
+                height: 800px;
+            }
+            .flex-container{
+                flex-wrap: nowrap;
+            }
+            .item3{
+                border: 1px solid black;
+                border-radius: 15px;
+                padding: 5px;
+                margin: 10px;
+                text-align: center;
+                width: 80%;
+                font-size: large;
+                font-weight: bold;
+            }
+            .item3:hover{
+                background-color: lightblue;
+            }   
+        }
+        
+    
+    </style>
+</head>
+<body>
+    
+    <header>
+        <p class="item"><a href="">Home</a></p>
+        <p class="item"><a href="">Rólunk</a></p>
+        <p class="item"><a href="">Termékek</a></p>
+        <p class="item"><a href="">Kapcsolat</a></p>
+    </header>
+    <div class="flex-container">
+        <nav>
+        
+        </nav>
+        <main>
+            <p class="item3">
+                <img src="./torpbogyo.jpg" alt="Hupike" class="meret">
+                Olcsó törpbogyók
+            </p>
+            <p class="item3">
+                <img src="./epol.jpg" alt="alma" class="meret">
+                Te nyertél ingyen iPhone
+            </p>
+            <p class="item3">
+                <img src="./piton.png" alt="piton" class="meret">
+                VJ Python képzés
+            </p>
+            <p class="item3">
+                <img src="./turr.jpg" alt="thier" class="meret">
+                Gyere Türrbe!
+            </p>
+            <p class="item3">
+                <img src="./scrum.jpg" alt="scrum" class="meret">
+                Ingyen scrum master képzés!
+            </p>
+            <p class="item3">
+                <img src="./reklam.jpg" alt="ad" class="meret">
+                Reklám!
+            </p>
+        </main>
+    </div>
+    <footer>
+        <p class="item2"><img src="./7.jpg" alt="Logo"></p>
+        <p class="item2">Copyright © Türr</p>
+        <p class="item2"><input type="button" value="Feliratkozás"></p>
+    </footer>
+
+</body>
+</html>
