@@ -82,6 +82,11 @@
         input[type="button"]{
             padding: 10px;
         }
+        @media screen and (max-width: 985px) {
+            .item3{
+                margin: 2px;
+            }
+        }
         @media screen and (max-width: 900px){
             .item3{
                 width: calc(90%/2);
@@ -96,19 +101,35 @@
                 height: 1100px;
             }
         }
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 700px){
+            nav{
+                width: 98.5%;
+                height: 100px;
+            }
+            main{
+                width: fit-content;
+                height: 3000px;
+            }
+            .flex-container{
+                flex-wrap: nowrap;
+                height: 3000px;
+            }
             .item3{
                 border: 1px solid black;
                 border-radius: 15px;
                 padding: 5px;
                 margin: 10px;
                 text-align: center;
-                width: 80%;
+                width: 60%;
                 font-size: large;
                 font-weight: bold;
             }
+            .item3:hover{
+                background-color: lightblue;
+            }   
         }
-        @media screen and (max-width: 500px){
+        @media screen and (max-width: 400px) {
+            /*Menü-logo*/
             header{
                 display: flex;
                 flex-direction: column;
@@ -130,37 +151,7 @@
             .item2{
                 margin: 10px;
             }
-            nav{
-                width: 97.5%;
-                height: 100px;
-            }
-            main{
-                width: fit-content;
-                height: 3000px;
-            }
-            .flex-container{
-                flex-wrap: nowrap;
-                height: 3000px;
-            }
-            .item3{
-                border: 1px solid black;
-                border-radius: 15px;
-                padding: 5px;
-                margin: 10px;
-                text-align: center;
-                width: 80%;
-                font-size: large;
-                font-weight: bold;
-            }
-            .item3:hover{
-                background-color: lightblue;
-            }   
         }
-        @media screen and (max-width: 400px) {
-            /*Menü-logo*/
-        }
-        
-    
     </style>
 </head>
 <body>
